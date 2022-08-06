@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/bg-pattern-top.svg), url(../assets/img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 65vw bottom 50vh, left 65vw top 50vh;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+p {
+    padding-top: .2rem;
+    font-size: .5rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: .1rem;
+}
+
+.cardContainer {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: -10px 15px 30px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -10px 15px 30px 0px rgba(0,0,0,0.5); 
+}
+
+.cardContainerTop {
+    height: 140px;
+    width: 100%;
+}
+
+.cardContainerMid {
+    height: 135px;
+    width: 100%;
+    background-color: white;
+}
+
+.cardContainerPhoto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainerPhoto img {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: -55px;
+    object-fit: cover;
+}
+
+.cardContainerContentTop {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.containerFlex {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardContainerContentBottom {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainerBottom {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    border-top: 1px solid hsl(227, 10%, 46%);
+}
+
+.cardContainerStats {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerStats {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .cardContainer {
+        width: 325px;
+    }
+}
